@@ -1,0 +1,16 @@
+doctype html
+html
+  include template.jade
+  body(style="background-color:black;")
+    include topbar.jade
+    div(class='w3-container w3-black')
+      each viewmovie in movies
+        div(class='w3-col w3-display-container w3-hover-opacity',style="transition:0.5s;width:300px")
+          a(href='/movie/' + viewmovie.id)
+            img(src='https://image.tmdb.org/t/p/w640#{viewmovie.cover}',style="width:300px")
+          div(class="w3-display-topmiddle w3-display-hover")
+            span(class='w3-button w3-black w3-hover-black w3-round')= viewmovie.title
+          div(class="w3-display-bottomleft w3-padding-8  w3-display-hover")
+            span(class='w3-button w3-white')= "Runtime in minutes: " + viewmovie.runtime
+            span(class='w3-button w3-white')= "Release Date: " + viewmovie.releaseDate
+            span(class='w3-button w3-white')= "Score: " + viewmovie.score

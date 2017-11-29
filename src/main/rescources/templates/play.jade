@@ -1,0 +1,9 @@
+doctype html
+html
+    include template.jade
+    body(style="background-color:black;")
+        div(class='w3-black',style="height:100%;width:100%;overflow:hidden;position:absolute")
+            include topbar.jade
+
+            video(class='w3-center',style="min-width:100%;max-height:96%;margin: 0auto;display:block;",autoplay, controls)
+                source(src=movie, type="video/mp4")

@@ -1,0 +1,31 @@
+doctype html
+html
+    include template.jade
+    body(style="background-color:black;")
+        include topbar.jade
+        div(class='w3-container w3-black')
+            form(class='w3-form', method="post")
+                div
+                    div(class='w3-third')
+                        h2 Categories
+                        div(style="height:750px;overflow-y:auto;")
+                            each category in genres
+                                p
+                                    input(class='w3-check', type='checkbox', checked='checked', name='genre:'+category.id)
+                                    label= category.name
+                    div(class='w3-third')
+                        h2 Tags
+                        div(style="height:750px;overflow-y:auto;")
+                            each category in tags
+                                p
+                                    input(class='w3-check', type='checkbox', checked='checked', name='tag:' + category.id)
+                                    label= category.name
+                    div(class='w3-third')
+                        h2 Studios
+                        div(style="height:750px;overflow-y:auto;")
+                            each category in studios
+                                p
+                                    input(class='w3-check', type='checkbox', checked='checked', name='studio:' + category.id)
+                                    label= category.name
+                p
+                    input(class='w3-button w3-red', type='submit')
