@@ -313,7 +313,7 @@ private List<twoThings> toList(String[][] s){
         });
     }
     private void addData(String path){
-        movieapi = new TmdbApi("4e2a19d42cf81753020f364461e33b35");
+        movieapi = new TmdbApi(yourcodehere);
 
     TmdbSearch serach = movieapi.getSearch();
     TmdbMovies dbmovies = movieapi.getMovies();
