@@ -1,17 +1,17 @@
 # Localnetflix - A local movie playing thing
 
-# Features
+## Features
 - TheMovieDB lookup
 - Database
 - Simple Code
 
-# TODO
+## TODO
 - Nice Code
 - Less Bugs
 - smth different than Java
 
 
-# HowTo
+## HowTo
 
 Add your [TheMoveDB API Code](https://developers.themoviedb.org/3) to /src/main/java/netflix/Main.java
 
