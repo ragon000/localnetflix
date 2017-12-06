@@ -8,7 +8,7 @@
 # TODO
 - Nice Code
 - Less Bugs
-- smth different then Java
+- smth different than Java
 
 
 # HowTo
