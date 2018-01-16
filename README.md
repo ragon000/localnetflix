@@ -1,5 +1,7 @@
 # Localnetflix - A local movie playing thing
 
+## This Project is currently not maintained (and it probably won't ever be)
+
 ## Features
 - TheMovieDB lookup
 - Database
